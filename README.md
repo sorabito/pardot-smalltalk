@@ -38,7 +38,7 @@ PardotLogin new authenticate.
 ### Upserting Prospects
 
 ```smalltalk
-PardotProspects new upsertEmail: '<email>'
+PardotProspects new upsertEmail: '<email>'.
 ```
 
 ## Visitors
@@ -46,5 +46,5 @@ PardotProspects new upsertEmail: '<email>'
 ### Assigning and Reassigning Visitors
 
 ```smalltalk
-PardotVisitor new assignVisitorId: <visitor_id> byProspectId: <prospect_id>.
+PardotVisitor new assignVisitorId: '<visitor_id>' byProspectId: '<prospect_id>'.
 ```

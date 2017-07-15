@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PardotObject",
+	"category" : "Pardot-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PardotLogin",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Error",
+	"category" : "Pardot-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"properties"
+	],
+	"name" : "PardotException",
+	"type" : "normal"
+}

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Pardot-Core",
+	"classinstvars" : [
+		"default"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"settingsDict"
+	],
+	"name" : "PardotSettings",
+	"type" : "normal"
+}

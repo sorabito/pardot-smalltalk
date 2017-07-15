@@ -1,0 +1,23 @@
+{
+	"instance" : {
+		"userKey:" : "ShoYoshida 7/15/2017 11:22",
+		"apiKey" : "ShoYoshida 7/15/2017 13:52",
+		"apiVersion" : "ShoYoshida 7/15/2017 12:06",
+		"email" : "ShoYoshida 7/15/2017 11:21",
+		"apiKey:" : "ShoYoshida 7/15/2017 13:52",
+		"at:" : "ShoYoshida 7/15/2017 10:47",
+		"at:put:" : "ShoYoshida 7/15/2017 10:47",
+		"at:ifAbsentPut:" : "ShoYoshida 7/15/2017 10:47",
+		"userKey" : "ShoYoshida 7/15/2017 11:21",
+		"at:ifAbsent:" : "ShoYoshida 7/15/2017 10:47",
+		"apiVersion:" : "ShoYoshida 7/15/2017 11:35",
+		"password" : "ShoYoshida 7/15/2017 11:21",
+		"settingsDict" : "ShoYoshida 7/15/2017 10:46",
+		"email:" : "ShoYoshida 7/15/2017 11:22",
+		"password:" : "ShoYoshida 7/15/2017 11:22"
+	},
+	"class" : {
+		"initialize" : "ShoYoshida 7/15/2017 10:46",
+		"default" : "ShoYoshida 7/15/2017 10:46"
+	}
+}

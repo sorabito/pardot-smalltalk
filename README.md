@@ -52,3 +52,10 @@ PardotProspects new upsertEmail: '<email>'.
 ```smalltalk
 PardotVisitor new assignVisitorId: '<visitor_id>' byProspectId: '<prospect_id>'.
 ```
+
+
+## Error handling
+
+```smalltalk
+[ PardotProspects new readEmail: '<e-mail>' ]	on: PardotException do:[:ex | ex inspect ].
+```

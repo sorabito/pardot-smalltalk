@@ -1,6 +1,6 @@
 # pardot-smalltalk
 
-[Pardot](http://developer.pardot.com/) for Pharo Smalltalk.
+[Pardot API](http://developer.pardot.com/) for Pharo Smalltalk.
 
 # Supported Smalltalk Versions
 
@@ -22,7 +22,11 @@ Metacello new
 > Obtain the email, password, and user_key (available in Pardot under {your email address} > Settings in the API User Key row) for the Pardot user account that will be submitting API requests.
 
 ```smalltalk
-PardotSettings initialize.PardotSettings default 	email: '<email>'; 	password: '<password>'; 	userKey: '<user_key>'.
+PardotSettings initialize.
+PardotSettings default 
+	email: '<email>'; 
+	password: '<password>'; 
+	userKey: '<user_key>'.
 ```
 
 

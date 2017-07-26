@@ -11,7 +11,7 @@ Pharo Smalltalk 6.0
 ```smalltalk
 Metacello new
     baseline: 'Pardot';
-    repository: 'github://newapplesho/pardot-smalltalk:v0.1/pharo-repository';
+    repository: 'github://newapplesho/pardot-smalltalk:v0.1.1/pharo-repository';
     load.
 ```
 
@@ -57,5 +57,6 @@ PardotVisitor new assignVisitorId: '<visitor_id>' byProspectId: '<prospect_id>'.
 ## Error handling
 
 ```smalltalk
-[ PardotProspects new readEmail: '<e-mail>' ]	on: PardotException do:[:ex | ex inspect ].
+[ PardotProspects new readEmail: '<e-mail>' ]
+	on: PardotException do:[:ex | ex inspect ].
 ```

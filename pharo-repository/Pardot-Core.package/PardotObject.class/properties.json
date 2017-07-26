@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"entity"
+		"entity",
+		"responseFormatType"
 	],
 	"name" : "PardotObject",
 	"type" : "normal"

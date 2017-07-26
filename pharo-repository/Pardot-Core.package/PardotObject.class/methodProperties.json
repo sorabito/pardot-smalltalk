@@ -1,11 +1,13 @@
 {
 	"instance" : {
+		"settings" : "ShoYoshida 7/15/2017 11:52",
 		"resourceBaseUrl" : "ShoYoshida 7/15/2017 12:27",
 		"defaultClient" : "ShoYoshida 7/15/2017 14:17",
 		"initialize" : "ShoYoshida 7/15/2017 13:33",
 		"client" : "ShoYoshida 7/15/2017 14:17",
+		"responseFormatType:" : "ShoYoshida 7/27/2017 00:14",
 		"entity" : "ShoYoshida 7/15/2017 13:17",
-		"settings" : "ShoYoshida 7/15/2017 11:52"
+		"responseFormatType" : "ShoYoshida 7/27/2017 00:14"
 	},
 	"class" : { }
 }

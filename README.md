@@ -4,7 +4,7 @@
 
 # Supported Smalltalk Versions
 
-Pharo Smalltalk 6.0
+Pharo Smalltalk 5.0, 6.0
 
 # Installation
 

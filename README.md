@@ -11,7 +11,7 @@ Pharo Smalltalk 5.0, 6.0
 ```smalltalk
 Metacello new
     baseline: 'Pardot';
-    repository: 'github://newapplesho/pardot-smalltalk:v0.1.1/pharo-repository';
+    repository: 'github://newapplesho/pardot-smalltalk:v0.1.2/pharo-repository';
     load.
 ```
 

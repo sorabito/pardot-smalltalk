@@ -1,7 +1,7 @@
 actions
 readEmail: email
 	| responseXML url |
-	url := self resourceUrl / 'read' / 'email' / email .
+	url := self resourceUrl / 'read' / 'email'.
 	url
 		queryAt: 'api_key' put: self settings apiKey;
 		queryAt: 'user_key' put: self settings userKey;

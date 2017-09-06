@@ -1,7 +1,7 @@
 actions
 upsertEmail: email
 	| responseXML url |
-	url := self resourceUrl / 'upsert' / 'email' / email .
+	url := self resourceUrl / 'upsert' / 'email'.
 	url
 		queryAt: 'api_key' put: self settings apiKey;
 		queryAt: 'user_key' put: self settings userKey;

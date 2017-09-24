@@ -1,4 +1,4 @@
-# pardot-smalltalk
+# pardot-smalltalk [![Build Status](https://travis-ci.org/newapplesho/pardot-smalltalk.svg?branch=master)](https://travis-ci.org/newapplesho/pardot-smalltalk)
 
 [Pardot API](http://developer.pardot.com/) for Pharo Smalltalk.
 

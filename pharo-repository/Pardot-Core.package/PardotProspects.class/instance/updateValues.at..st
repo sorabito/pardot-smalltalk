@@ -1,5 +1,5 @@
 actions
-update: aDictionary byProspectId: prospectId 
+updateValues: aDictionary at: prospectId 
 	| responseXML url |
 	url := self resourceUrl / 'update' / 'id' / prospectId.
 	url

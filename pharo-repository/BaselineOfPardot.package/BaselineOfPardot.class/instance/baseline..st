@@ -5,10 +5,11 @@ baseline: spec
 		for: #common
 		do: [ 
 			spec
-				package: 'XML-Parser'
+				project: 'XMLParser'
 				with: [ spec
-						file: 'XML-Parser-monty.449';
-						repository: 'https://squeaksource.blueplane.jp/AsLegacyLibs' ].
+						className: 'ConfigurationOfXMLParser';
+						versionString: #stable;
+						repository: 'http://smalltalkhub.com/mc/PharoExtras/XMLParser/main' ].
 
 			spec
 				package: 'Pardot-Core'. ].

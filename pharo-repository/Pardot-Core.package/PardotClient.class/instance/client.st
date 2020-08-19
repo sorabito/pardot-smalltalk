@@ -1,3 +1,3 @@
 accessing
 client
-	^ client ifNil: [ client := self defaultClient new beOneShot]
+	^ client ifNil: [ client := self defaultClient new beOneShot; beBinary]

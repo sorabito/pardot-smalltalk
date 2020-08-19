@@ -6,6 +6,6 @@ httpPost: aUri contents: entity
 	aUri ~= (PardotLogin new resourceUrl) ifTrue: [ self setAuthorizationTo: request ].
 	request url: aUri.
 	request entity: entity.
-	self client request: request.
+	self client beBinary request: request.
 	client execute.
 	^ client response

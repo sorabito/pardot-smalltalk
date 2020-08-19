@@ -5,6 +5,6 @@ httpGet: aUri
 	request method: #GET.
 	aUri ~= (PardotLogin new resourceUrl) ifTrue: [ self setAuthorizationTo: request ].
 	request url: aUri.
-	self client request: request.
+	self client beBinary request: request.
 	client execute.
 	^ client response.

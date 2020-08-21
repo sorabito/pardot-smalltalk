@@ -1,3 +1,3 @@
 accessing
 resourceBaseUrl
-	^ PardotResourceUrl baseUrl / 'api'.
+	^ self class resourceBaseUrl

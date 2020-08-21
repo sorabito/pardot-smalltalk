@@ -1,7 +1,7 @@
 actions
 updateValues: aDictionary at: prospectId 
 	| responseXML url |
-	url := self resourceUrl / 'update' / 'id' / prospectId.
+	url := self class resourceUrl / 'update' / 'id' / prospectId.
 	aDictionary keysAndValuesDo: [ :key :value |
 		url queryAt: key put: value.
 	].

@@ -10,5 +10,5 @@ testAuthenticate
 		readFromResponse: (pardotClient httpPost: PardotLogin resourceUrl contents: entity).
 	apiKey := (responseXML findElementNamed: 'api_key') contentString.
 
-	self assert: PardotClient new authenticate equals: apiKey.
+	self assert: PardotLogin new authenticate equals: apiKey.
 	self assert: PardotSettings default apiKey equals: apiKey.

@@ -1,3 +1,3 @@
 accessing
 resourceUrl
-	self class resourceUrl
+	^ self class resourceUrl

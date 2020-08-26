@@ -1,0 +1,10 @@
+{
+	"instance" : {
+		"testAuthenticate" : "KazunoriUeda 8/24/2020 12:03",
+		"testInstVar" : "KazunoriUeda 8/24/2020 10:18",
+		"testDefaultValue" : "KazunoriUeda 8/24/2020 11:01",
+		"testHttpGet" : "KazunoriUeda 8/24/2020 13:05",
+		"testHttpPost" : "KazunoriUeda 8/24/2020 13:05"
+	},
+	"class" : { }
+}

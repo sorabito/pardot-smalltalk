@@ -1,14 +1,15 @@
 {
 	"instance" : {
-		"settings" : "ShoYoshida 7/15/2017 11:41",
-		"createRequest" : "ShoYoshida 7/15/2017 10:48",
 		"defaultClient" : "ShoYoshida 7/15/2017 10:44",
-		"client" : "ShoYoshida 7/15/2017 15:22",
-		"httpPost:contents:" : "ShoYoshida 7/15/2017 13:24",
 		"defaultResponseClass" : "ShoYoshida 7/15/2017 13:10",
-		"authenticate" : "ShoYoshida 7/15/2017 14:10",
-		"httpGet:" : "ShoYoshida 7/15/2017 10:45",
-		"readFromResponse:" : "ShoYoshida 7/15/2017 13:09"
+		"readFromResponse:" : "ShoYoshida 7/15/2017 13:09",
+		"settings" : "ShoYoshida 7/15/2017 11:41",
+		"httpGet:" : "KazunoriUeda 8/21/2020 11:42",
+		"setAuthorizationTo:" : "KazunoriUeda 8/19/2020 09:53",
+		"httpPost:contents:" : "KazunoriUeda 8/21/2020 11:42",
+		"createRequest" : "ShoYoshida 7/15/2017 10:48",
+		"authenticate" : "KazunoriUeda 8/24/2020 09:44",
+		"client" : "KazunoriUeda 8/20/2020 09:38"
 	},
 	"class" : { }
 }

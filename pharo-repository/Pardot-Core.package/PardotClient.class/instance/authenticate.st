@@ -9,4 +9,4 @@ authenticate
 		readFromResponse: (self httpPost: pardotLogin resourceUrl contents: pardotLogin entity).
 	apiKey := (responseXML findElementNamed: 'api_key') contentString.
 	self settings apiKey: apiKey.
-	^ (responseXML findElementNamed: 'api_key') contentString
+	^ apiKey

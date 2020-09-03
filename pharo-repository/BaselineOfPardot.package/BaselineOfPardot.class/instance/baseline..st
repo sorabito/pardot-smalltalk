@@ -4,12 +4,8 @@ baseline: spec
 	spec
 		for: #common
 		do: [ 
-			spec
-				project: 'XMLParser'
-				with: [ spec
-						className: 'ConfigurationOfXMLParser';
-						versionString: #stable;
-						repository: 'http://smalltalkhub.com/mc/PharoExtras/XMLParser/main' ].
+			spec baseline: 'XMLParser' with: [
+				spec repository: 'github://pharo-contributions/XML-XMLParser:master'].
 
 			spec
 				package: 'Pardot-Core';

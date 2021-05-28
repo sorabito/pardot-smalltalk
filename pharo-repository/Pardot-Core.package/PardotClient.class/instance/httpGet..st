@@ -3,7 +3,8 @@ httpGet: aUri
 	| request |
 	request := self createRequest.
 	request method: #GET.
-	aUri ~= (PardotLogin resourceUrl) ifTrue: [ self setAuthorizationTo: request ].
+	self setAuthorizationTo: request.
+	self setPardotBuisinessUnitIdTo: request.
 	request url: aUri.
 	self client request: request.
 	client execute.

@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "ZnOAuth2Session",
 	"category" : "Pardot-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"client",
-		"session"
-	],
-	"name" : "PardotClient",
+	"instvars" : [ ],
+	"name" : "PardotOAuth2Session",
 	"type" : "normal"
 }

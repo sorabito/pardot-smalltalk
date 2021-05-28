@@ -1,1 +1,3 @@
-(name 'Pardot-Tests-KazunoriUeda.2' message 'empty log message' id '4a5de68a-fb69-0d00-94df-3d50055b714f' date '24 August 2020' time '3:36:25.299688 pm' author 'KazunoriUeda' ancestors ((name 'Pardot-Tests-KazunoriUeda.1' message 'empty log message' id '51b2d1b8-f769-0d00-94dc-5870055b714f' date '24 August 2020' time '11:02:55.827756 am' author 'KazunoriUeda' ancestors () stepChildren ())) stepChildren ())
+(name 'Pardot-Tests-KazunoriUeda.1599100319' message 'empty log message' id '07008776-bf7f-0d00-96e7-002800bdf0e5' date '28 May 2021' time '3:10:01.278651 pm' author 'KazunoriUeda' ancestors ((name 'Pardot-Tests-CompatibleUserName.1599100318' message 'Merge pull request #5 from sorabito/feature/AS-10831
+
+AS-10831 fix XMLParser repository info' id '9e1374a4-0e34-5c30-836c-11351c477a86' date '3 September 2020' time '2:31:58 am' author 'CompatibleUserName' ancestors () stepChildren ())) stepChildren ())

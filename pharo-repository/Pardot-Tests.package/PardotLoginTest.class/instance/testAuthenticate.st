@@ -1,14 +1,18 @@
 testing
 testAuthenticate
-	| pardotClient entity responseXML apiKey |
+	| pardotClient consumerData parameterDict session accessToken |
 	pardotClient := PardotClient new.
-	entity := ZnApplicationFormUrlEncodedEntity new.
-	entity at: 'email' put: pardotClient settings email.
-	entity at: 'password' put: pardotClient settings password.
-	entity at: 'user_key' put: pardotClient settings userKey.
-	responseXML := pardotClient
-		readFromResponse: (pardotClient httpPost: PardotLogin resourceUrl contents: entity).
-	apiKey := (responseXML findElementNamed: 'api_key') contentString.
-
-	self assert: PardotLogin new authenticate equals: apiKey.
-	self assert: PardotSettings default apiKey equals: apiKey.
+	consumerData := ZnOAuth2ConsumerData 
+		key: pardotClient settings pardotClientId
+		secret: pardotClient settings pardotClientSecret
+		redirectUrl: ''.
+	parameterDict := {
+		#username -> (pardotClient settings salesforceUsername).
+		#password -> (pardotClient settings salesforcePassword).
+	} asDictionary.
+	
+	session := PardotOAuth2Session new setConsumerData: consumerData.
+	session handleAuthenticationCallback: parameterDict.
+	accessToken := session accessToken.
+	self assert: PardotLogin new authenticate equals: accessToken.
+	self assert: PardotSettings default accessToken equals: accessToken.

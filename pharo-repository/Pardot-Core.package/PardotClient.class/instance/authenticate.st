@@ -1,12 +1,17 @@
 actions
 authenticate
-	| pardotLogin responseXML apiKey |
-	pardotLogin := PardotLogin new.
-	pardotLogin email: self settings email.
-	pardotLogin password: self settings password.
-	pardotLogin userKey: self settings userKey.
-	responseXML := self
-		readFromResponse: (self httpPost: pardotLogin resourceUrl contents: pardotLogin entity).
-	apiKey := (responseXML findElementNamed: 'api_key') contentString.
-	self settings apiKey: apiKey.
-	^ apiKey
+	| consumerData parameterDict |
+	consumerData := ZnOAuth2ConsumerData 
+		key: self settings pardotClientId
+		secret: self settings pardotClientSecret
+		redirectUrl: ''.
+	parameterDict := {
+		#username -> (self settings salesforceUsername).
+		#password -> (self settings salesforcePassword).
+	} asDictionary.
+	
+	session := PardotOAuth2Session new setConsumerData: consumerData.
+	session handleAuthenticationCallback: parameterDict.
+	self settings accessToken: session accessToken.
+
+	^ session accessToken.

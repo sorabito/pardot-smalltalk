@@ -1,6 +1,5 @@
-as yet unclassified
+public
 handleAuthenticationCallback: aParameterDictionary 
-
 	| username password url client oauthResponse |
 	
 	username := aParameterDictionary at: 'username' ifAbsent: [ ^nil ].

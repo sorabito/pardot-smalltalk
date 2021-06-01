@@ -1,3 +1,3 @@
 accessing
 session
-	^ session
+	^ session ifNil: [ session := self defaultSessionClass new ]

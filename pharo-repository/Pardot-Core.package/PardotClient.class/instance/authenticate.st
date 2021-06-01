@@ -1,17 +1,17 @@
 actions
 authenticate
-	| consumerData parameterDict |
+	| consumerData settings |
 	consumerData := ZnOAuth2ConsumerData 
 		key: self settings pardotClientId
 		secret: self settings pardotClientSecret
 		redirectUrl: ''.
-	parameterDict := {
-		#username -> (self settings salesforceUsername).
-		#password -> (self settings salesforcePassword).
-	} asDictionary.
-	
-	session := PardotOAuth2Session new setConsumerData: consumerData.
-	session handleAuthenticationCallback: parameterDict.
-	self settings accessToken: session accessToken.
+	settings := self settings.
 
-	^ session accessToken.
+	self session setConsumerData: consumerData.
+	self session
+		authenticate: settings salesforceUsername
+		password: settings salesforcePassword.
+
+	settings accessToken: self session accessToken.
+
+	^ self session accessToken.

@@ -7,6 +7,10 @@ baseline: spec
 			spec baseline: 'XMLParser' with: [
 				spec repository: 'github://pharo-contributions/XML-XMLParser:master'].
 
+			spec baseline: 'ZincHTTPComponents' with: [
+				spec repository: 'github://svenvc/zinc:5206a27016d9f8120dfeb519a21a9c898d406cfa/repository';
+					loads: #('Core' 'SSO-OAuth1' 'SSO-OAuth2' 'WebSocket') ].
+
 			spec
 				package: 'Pardot-Core';
 				package: 'Pardot-Tests' with: [

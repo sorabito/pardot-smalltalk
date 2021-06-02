@@ -8,8 +8,7 @@ baseline: spec
 				spec repository: 'github://pharo-contributions/XML-XMLParser:master'].
 
 			spec
-				package: 'Pardot-Core' with: [
-					spec requires: #(#'Zinc-SSO-OAuth2-Core') ];
+				package: 'Pardot-Core';
 				package: 'Pardot-Tests' with: [
 					spec requires: #(#'Pardot-Core') ].
 				

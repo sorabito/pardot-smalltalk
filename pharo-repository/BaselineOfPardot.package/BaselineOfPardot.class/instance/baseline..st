@@ -7,13 +7,9 @@ baseline: spec
 			spec baseline: 'XMLParser' with: [
 				spec repository: 'github://pharo-contributions/XML-XMLParser:master'].
 
-			spec
-				project: 'ZincHTTPComponents'
-					with: [ 
-							spec
-								className: 'ConfigurationOfZincHTTPComponents';
-								versionString: #stable;
-								repository: 'http://mc.stfx.eu/ZincHTTPComponents' ].
+			spec package: 'Zinc-SSO-OAuth2-Core' with: [
+				spec 
+					repository: 'http://mc.stfx.eu/ZincHTTPComponents'. ].
 
 			spec
 				package: 'Pardot-Core';

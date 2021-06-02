@@ -12,7 +12,8 @@ baseline: spec
 					repository: 'http://mc.stfx.eu/ZincHTTPComponents'. ].
 
 			spec
-				package: 'Pardot-Core';
+				package: 'Pardot-Core' with: [
+					spec requires: #(#'Zinc-SSO-OAuth2-Core') ];
 				package: 'Pardot-Tests' with: [
 					spec requires: #(#'Pardot-Core') ].
 				

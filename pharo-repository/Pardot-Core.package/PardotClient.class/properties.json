@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"client",
 		"session"
 	],
 	"name" : "PardotClient",

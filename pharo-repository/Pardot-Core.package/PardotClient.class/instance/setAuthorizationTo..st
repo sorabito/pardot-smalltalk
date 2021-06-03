@@ -1,5 +1,5 @@
 private
 setAuthorizationTo: request
-	| authorization |
-	authorization := 'Bearer {1}' format: { self settings accessToken }.
-	request setAuthorization: authorization.
+	| bearerAuthorizationHeader |
+	bearerAuthorizationHeader := 'Bearer {1}' format: { self accessToken }.
+	request setAuthorization: bearerAuthorizationHeader.

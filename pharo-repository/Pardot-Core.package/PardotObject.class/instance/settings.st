@@ -1,3 +1,3 @@
 accessing
 settings
-	^ PardotSettings default
+	^ settings ifNil: [settings := PardotSettings default]

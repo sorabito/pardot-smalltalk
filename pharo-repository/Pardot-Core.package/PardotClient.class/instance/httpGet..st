@@ -1,11 +1,12 @@
 http-method
 httpGet: aUri
-	| request |
+	| cli request |
+	cli := self client.
 	request := self createRequest.
 	request method: #GET.
 	self setAuthorizationTo: request.
 	self setPardotBuisinessUnitIdTo: request.
 	request url: aUri.
-	self client request: request.
-	client execute.
-	^ client response.
+	cli request: request.
+	cli execute.
+	^ cli response.

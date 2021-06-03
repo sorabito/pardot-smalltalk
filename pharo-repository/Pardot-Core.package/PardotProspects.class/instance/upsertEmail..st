@@ -1,6 +1,7 @@
 actions
 upsertEmail: email
 	| responseXML url |
+	self ensureLogin.
 	url := self resourceUrl / 'upsert' / 'email'.
 	url
 		queryAt: 'email' put: email.

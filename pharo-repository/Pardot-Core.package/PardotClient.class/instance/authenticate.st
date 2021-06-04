@@ -1,6 +1,6 @@
 actions
 authenticate
-	| consumerData settings |
+	| consumerData settings token |
 	consumerData := ZnOAuth2ConsumerData 
 		key: self settings pardotClientId
 		secret: self settings pardotClientSecret
@@ -8,10 +8,10 @@ authenticate
 	settings := self settings.
 
 	self session setConsumerData: consumerData.
-	self session
+	token := self session
 		authenticate: settings salesforceUsername
 		password: settings salesforcePassword.
 
-	settings accessToken: self session accessToken.
+	token ifNotNil: [settings accessToken: token].
 
-	^ self session accessToken.
+	^ token

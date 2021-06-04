@@ -1,14 +1,20 @@
 {
 	"instance" : {
-		"settings" : "ShoYoshida 7/15/2017 11:52",
+		"logout" : "MU 6/3/2021 22:08",
 		"resourceBaseUrl" : "KazunoriUeda 8/21/2020 13:47",
-		"defaultClient" : "ShoYoshida 7/15/2017 14:17",
-		"initialize" : "ShoYoshida 7/15/2017 13:33",
-		"client" : "ShoYoshida 7/15/2017 14:17",
-		"resourceUrl" : "KazunoriUeda 8/24/2020 09:13",
+		"responseFormatType" : "ShoYoshida 7/27/2017 00:58",
+		"login" : "MU 6/3/2021 21:07",
 		"responseFormatType:" : "ShoYoshida 7/27/2017 00:14",
+		"defaultClient" : "ShoYoshida 7/15/2017 14:17",
+		"ensureLogin" : "MU 6/3/2021 21:13",
+		"initialize" : "ShoYoshida 7/15/2017 13:33",
+		"settings" : "MU 6/3/2021 20:15",
+		"client:" : "MU 6/3/2021 20:14",
+		"settings:" : "MU 6/3/2021 20:14",
 		"entity" : "ShoYoshida 7/15/2017 13:17",
-		"responseFormatType" : "ShoYoshida 7/27/2017 00:58"
+		"entity:" : "MU 6/3/2021 20:14",
+		"resourceUrl" : "KazunoriUeda 8/24/2020 09:13",
+		"client" : "MU 6/3/2021 20:15"
 	},
 	"class" : {
 		"resourceBaseUrl" : "KazunoriUeda 8/21/2020 11:43",

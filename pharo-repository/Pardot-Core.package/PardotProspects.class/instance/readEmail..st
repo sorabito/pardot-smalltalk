@@ -1,6 +1,7 @@
 actions
 readEmail: email
 	| responseXML url |
+	self ensureLogin.
 	url := self resourceUrl / 'read' / 'email'.
 	url
 		queryAt: 'output' put: self responseFormatType;

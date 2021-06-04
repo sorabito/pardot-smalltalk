@@ -6,4 +6,5 @@ authenticate: username password: password
 		#password -> password.
 	} asDictionary.
 
-	^ self handleAuthenticationCallback: parameterDict
+	self handleAuthenticationCallback: parameterDict.
+	^self accessToken 
